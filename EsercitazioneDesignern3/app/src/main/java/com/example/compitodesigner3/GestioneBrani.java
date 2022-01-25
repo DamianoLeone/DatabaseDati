@@ -17,7 +17,7 @@ public class GestioneBrani {
 
     }
 
-    public void addBrano( String titolo, String genere)
+    public void addBrano(String titolo, String  genere)
     {
       Brano br = new Brano( titolo, genere);
       ListaBrani.add(br);

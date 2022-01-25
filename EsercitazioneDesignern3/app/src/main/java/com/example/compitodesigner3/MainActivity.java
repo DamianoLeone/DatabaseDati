@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                gb.addBrano();
+               gb.addBrano(txtTitolo.getText().toString(),txtBrano.getText().toString() );
+
 
             }
         });
@@ -36,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                i.putExtra("BRANI",gb.ListaBrani );
+                i.putExtra("BRANI",gb.listaSong() );
                 startActivity(i);
+
 
 
             }

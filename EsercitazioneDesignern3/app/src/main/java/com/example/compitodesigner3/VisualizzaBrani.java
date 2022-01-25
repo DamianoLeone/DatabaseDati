@@ -8,7 +8,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 public class VisualizzaBrani extends AppCompatActivity {
-    ArrayList ListaCanzoni;
+    String ListaCanzoni;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,6 @@ public class VisualizzaBrani extends AppCompatActivity {
         Intent i =getIntent();
         Bundle b = i.getExtras();
 
-        ListaCanzoni=b.getStringArrayList("BRANI");
+        ListaCanzoni=b.getString("BRANI");
     }
 }
